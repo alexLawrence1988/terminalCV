@@ -72,6 +72,6 @@ architectures:                                                other:
                 `)
 });
 
-app.listen(8500, () => {
-    console.log('cv listening on port 8500');
+app.listen(process.env.PORT || 5000, () => {
+    console.log('cv listening on port' + process.env.PORT || 5000);
 });
